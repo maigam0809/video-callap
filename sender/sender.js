@@ -1,4 +1,4 @@
-const webSocket = new WebSocket('ws://192.168.1.7:3001');
+const webSocket = new WebSocket('https://gallant-mcclintock-7c24e1.netlify.app/sender/sender.html');
 webSocket.onmessage = (e) => {
     handleSignallingData(JSON.parse(e.data))
 }
